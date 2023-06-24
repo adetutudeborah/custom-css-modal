@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ html{
+     font-size: 62.5%;
+ }
+ 
+ body{
+     font-family: 'Raleway', sans-serif;
+     background-color: #eff0f9;
+ }
+
+ .navbrand {
+  margin-right: auto;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  font-size: 2em;
+}
+
+ .navbar {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: #4E56EE;
+  color: #ffff;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: center;
+}
+
+li {
+  margin: 0 2rem;
+  font-size: 1.5rem;
+}
+
+.hero-content {
+  margin: 12rem auto;
+  text-align: center;
+}
+
+.content-heading {
+  font-size: 4.5rem;
+}
+
+.content-subheading {
+  font-size: 1.5rem;
+  padding: 1rem 5rem 4rem;
+  line-height: 1.8; 
+}
+
+ /* Modal */
+
+#modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    animation: slide-down 0.3s ease;
+    animation-fill-mode: forwards;
+    transform: translateY(-100%);
+  }
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.modal { 
+    max-width: 480px;
+    height: 300px;
+    margin: 200px auto;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 0rem 2rem;
+    animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      transform: scale(.5)
+    }
+    100% {
+      transform:scale(1)
+    }
+  } 
+
+.close-icon {
+   font-size: 4rem;
+   text-align: right;
+   cursor: pointer;
+}
+
+.modal-content {
+   text-align: center;
+   padding-top: 2rem;
+}
+
+.modal-content-heading {
+    color: #4E56EE;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.modal-content-subheading {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 1.3rem 1.5rem;
+}
+
+.close-button,
+.open-modal-btn {
+    background-color: #4E56EE;
+    color: #ffff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1.2rem 2rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .open-modal-btn:hover,
+  .open-modal-btn:focus{
+    background-color: #ffff;
+    color: #4E56EE;
+    border: 1px solid #4E56EE;
+  }
+   
+  @media screen and (max-width: 540px) { 
+
+    .navbrand {
+      font-size: 1.5rem;
+    }
+
+    .navitem {
+      display: none;
+    }
+
+    .hero-content {
+      margin: 6rem auto;
+    }
+
+    .content-heading {
+      font-size: 2.5rem;
+    }
+    
+    .content-subheading {
+      font-size: 0.8rem;
+      padding: 1rem 3rem 4rem;
+      line-height: 1.8;
+    }
+
+    .modal { 
+      max-width: 300px;
+      height: 320px;
+      padding: 0rem 1rem;
+    }
+  
+  } 

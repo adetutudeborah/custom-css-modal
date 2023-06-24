@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS stylesheet -->
+        <link rel="stylesheet" href="src/styles.css">
+        
+        <title>How to implement a custom modal with CSS</title>
+    </head>
+<body>  
+
+    <div class="main">
+
+        <nav class="navbar">
+            <ul>
+                <li class="navbrand">QuantaCore Labs</li>
+                <li class="navitem">About</li>
+                <li class="navitem">Products</li>
+                <li class="navitem">Pricing</li>
+                <li class="navitem">Request Demo</li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="content-heading">Innovative and data-driven <br/> solutions for your business</h1>
+            <p class="content-subheading">
+                We are a cutting-edge technology company dedicated to delivering innovative solutions for complex data processing and analysis. <br/>
+                We empower organizations to gain actionable insights and make smarter, data-backed decisions faster than ever before.
+            </p>
+         
+            <div>
+             <button id="open-modal" class="open-modal-btn">Read More</button>
+           </div>
+        </div>
+    </div>
+    
+    <div id="modal-overlay">
+        <div class="modal">
+            <div>
+                <div class="modal-close-button close-icon">&times;</div>
+            </div>
+            <div class="modal-content">
+               <h2 class="modal-content-heading">Privacy Policy</h2>
+               <p class="modal-content-subheading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                qui officia deserunt mollit anim id est laborum.
+               </p>
+               <button class="close-button modal-accept-button">Okay, I understand</button>
+            </div>
+        </div>
+    </div>
+      
+    <script src="src/script.js"></script>
+</body>
+</html>
